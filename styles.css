@@ -65,3 +65,32 @@ li > button:hover{
 	color: #bdae93;
 }
 
+.my-image {
+	text-align: center;
+}
+
+.text-holder {
+	background-color: #1d2021;
+	font-size: 120%;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #bdae93;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	color: #fbf1c7;
+}
+.myskillz > h2 {
+	color: #ebdbb2;
+	text-align: center;
+}
+
+a {
+	color: none;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration:none;
+	color: #ebdbb2;
+}
