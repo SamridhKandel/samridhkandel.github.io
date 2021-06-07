@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <header>
-    <div class="navigation">
-            <nav>
-                <ul>
-                    <li><button> <a href="index.html"> HOME </a></button></li>
-                    <li><button> <a href="aboutme.html"> ABOUT ME </a></button></li>
-                    <li><button> PROJECTS </button></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <script src="https://kit.fontawesome.com/8bc87fbc40.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage of Samridh Kandel</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-        <div class="root">
-            <div id="particles-js"></div>
-            <div class="image">
-                <figure>
-                    <img src="images/me.jpg" height="200px">
-                    <figcaption class="name"> SAMRIDH KANDEL </figcaption>
-                    <figcaption class="archbtw"> i use arch btw </figcaption>
-                    </img>
-                </figure>
-            </div>
+<body id="body">
+    <nav id="navbar">
+        <div id="particles-js"></div>
+        <div class="vertical-align" id="valign">
+            <figure>
+                <img src="me.jpg">
+                <figcaption class="name"><br> SAMRIDH KANDEL </figcaption>
+                <figcaption class="archbtw"> i use arch btw </figcaption>
+            </figure>
+            <ul class="socials" id="socials">
+                <li><a class="social" href="https://www.facebook.com/ntfs69420"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="social" href="https://www.instagram.com/not.ntfs/"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="social" href="https://github.com/SamridhKandel"><i class="fab fa-github"></i></a></li>
+            </ul>
         </div>
+    </nav>
 
-            <script type="text/javascript" src="particles.min.js"> </script>
-                    <script src="app.js"> </script>
+    <main>
+        <header> 
+            <h1 class="about"><a class="a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> About </a></h1>
+            <ul id="index-list">
+                <li><button><a class="a" href="https://github.com/SamridhKandel">Projects   </a></button></li> 
+                <li><button><a class="a" href="https://github.com/SamridhKandel/Linux-Files">Configs   </a></button></li>
+                <li><button><a class="a" href="#">Settings  </a></button></li>
+            </ul>
+        </header>
+        <div class="aboutme" id="aboutme">
+            Hello There!<br>
+            My name if you haven't noticed yet is Samridh Kandel.<br>
+            I'm currently in grade 11 at Aroma High School situated in Chitwan. <br>
+            I would like to describe myslef as a meme connoisseur, competetive procrastinator amd a professional dumbass.<br> 
+            I made this site for no particular reason than to put my HTML, CSS and JSX skills to test.<br>
+            Turns out they are doo doo :(<br><br>
 
+            I don't know what to do more with this site so just gonna add some Lorem Ipsum :)<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+
+        </div>
+        <div class="align">
+            <label for="myToggle" class="toggle">
+                <input type="checkbox" id="myToggle" class="toggle__input" onclick="check()">
+                <div class="toggle__fill"></div>
+            </label>
+        </div>
+    
+        <footer class="themeText" id="themeText"> Current Theme: Gruvbox </footer>
+     <script>
+         function check() {
+             if(document.getElementById('myToggle').checked == true) {
+                 document.getElementById('body').style.backgroundColor='#073642';
+                 document.getElementById('themeText').textContent='Current Theme: Solarized';
+                 document.getElementById('themeText').style.color='#d33682';
+                 document.getElementById('navbar').style.backgroundColor='#002b36';
+                 document.getElementById('aboutme').style.color='#6c71c4';
+                 document.getElementsByClassName('name')[0].style.color='#fdf6e3';
+                 for (i=0; i<document.getElementsByClassName('a').length; i++) {
+                     document.getElementsByClassName('a')[i].style.color='#b58900';
+                 }
+                 for (i=0; i<document.getElementsByClassName('social').length; i++) {
+                     document.getElementsByClassName('social')[i].style.color='#cb4b16';
+                 }
+             }
+             else {
+                 document.getElementById('body').style.backgroundColor='#3c3836';
+                 document.getElementById('themeText').textContent='Current Theme: Gruvbox';
+                 document.getElementById('themeText').style.color='#ebdbb2';
+                 document.getElementById('navbar').style.backgroundColor='#282828';
+                 document.getElementById('aboutme').style.color='#ffebdbb2';
+                 document.getElementsByClassName('name')[0].style.color='#ebdbb2';
+                 for (i=0; i<document.getElementsByClassName('a').length; i++) {
+                     document.getElementsByClassName('a')[i].style.color='#ebdbb2';
+                 }
+                 for (i=0; i<document.getElementsByClassName('social').length; i++) {
+                     document.getElementsByClassName('social')[i].style.color='#ebdbb2';
+                 }
+
+             }
+         } 
+    </script>
+    </main>
+
+    <script type="text/javascript" src="particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
